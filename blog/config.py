@@ -11,8 +11,8 @@ class Config:
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = 'mail'
-    MAIL_PASSWORD = 'password'
+    MAIL_USERNAME = 'Lockdownsaga.ucsp@gmail.com'
+    MAIL_PASSWORD = 'imageneering123'
 
 
 class ProductionConfig(Config):
