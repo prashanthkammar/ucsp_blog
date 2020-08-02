@@ -21,7 +21,6 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
     is_admin = db.Column(db.Boolean)
-    dummy = db.Column(db.Integer)
     posts = db.relationship('Post', backref='author', lazy=True)
 
     liked = db.relationship('PostLike', backref='user', lazy='dynamic')
