@@ -1,43 +1,76 @@
-{% extends "layout.html" %}
-{% block content %}
-{% for post in posts.items %}
+{% extends "layout.html" %} {% block content %} {% for post in posts.items %}
 <article class="media content-section">
-    <div class="media-body">
-        <div class="article-metadata">
-            <a href="{{ url_for('users.user_posts', username = post.author.username) }}" class="mr-2"
-                style="text-decoration: none;">{{ post.author.username }}</a>
-            <small class="text-muted">{{post.date_posted.strftime('%d-%m-%Y')}}</small>
-        </div>
-        <h2><a href="{{ url_for('posts.post', post_id=post.id) }}" class="article-title">{{post.title}}</a></h2>
-        <p class="article-content">{{post.content}}</p>
-        <div class="like">
-            {% if current_user.is_authenticated %}
-            <span style="font-size: 1.5em;">{{ post.likes.count() }}</span>
-            {% if current_user.has_liked_post(post) %}
-            <a href="{{ url_for('posts.like_action', post_id=post.id, action='unlike') }}"><i class="fa fa-thumbs-up"
-                    style="color: #24a0ed !important; font-size: 2em;" aria-hidden="true"></i></a>
-            {% else %}
-            <a href="{{ url_for('posts.like_action', post_id = post.id, action='like') }}"><i class="fa fa-thumbs-up"
-                    style="font-size: 2em;" aria-hidden="true"></i></a>
-            {% endif %}
-            {% else %}
-            {{ post.likes.count() }}
-            <a href="{{ url_for('posts.like_action', post_id = post.id, action='like') }}"><i class="fa fa-thumbs-up"
-                    style="font-size: 2em;" aria-hidden="true"></i></a>
-            {% endif %}
-        </div>
+  <div class="media-body">
+    <div class="article-metadata">
+      <a
+        href="{{ url_for('users.user_posts', username = post.author.username) }}"
+        class="mr-2"
+        style="
+          text-decoration: none;
+          color: #fff;
+          font-family: 'Literata', serif;
+        "
+        >{{ post.author.username }}</a
+      >
+      <small class="">{{post.date_posted.strftime('%d-%m-%Y')}}</small>
     </div>
+    <h2>
+      <a
+        href="{{ url_for('posts.post', post_id=post.id) }}"
+        class="article-title"
+        >{{post.title}}</a
+      >
+    </h2>
+    <p class="article-content">{{post.content}}</p>
+    <div class="like">
+      {% if current_user.is_authenticated %}
+      <span style="font-size: 1.5em">{{ post.likes.count() }}</span>
+      {% if current_user.has_liked_post(post) %}
+      <a
+        href="{{ url_for('posts.like_action', post_id=post.id, action='unlike') }}"
+        ><i
+          class="fa fa-thumbs-up"
+          style="font-size: 2em; color: #f1e0cb !important"
+          aria-hidden="true"
+        ></i
+      ></a>
+      {% else %}
+      <a
+        href="{{ url_for('posts.like_action', post_id = post.id, action='like') }}"
+        ><i
+          class="fa fa-thumbs-up"
+          style="font-size: 2em; color: #232323 !important"
+          aria-hidden="true"
+        ></i
+      ></a>
+      {% endif %} {% else %} {{ post.likes.count() }}
+      <a
+        href="{{ url_for('posts.like_action', post_id = post.id, action='like') }}"
+        ><i
+          class="fa fa-thumbs-up"
+          style="font-size: 2em; color: #232323 !important"
+          aria-hidden="true"
+        ></i
+      ></a>
+      {% endif %}
+    </div>
+  </div>
 </article>
-{% endfor %}
-{% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
-{% if page_num %}
-{% if posts.page == page_num %}
-<a class="btn btn-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
-{% else %}
-<a class="btn btn-outline-info mb-4" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
-{% endif %}
-{% else %}
-...
-{% endif %}
-{% endfor %}
+{% endfor %} <br />
+<div class="bottom_button">
+  {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1,
+  right_current=2) %} {% if page_num %} {% if posts.page == page_num %}
+  <a
+    class="btn btn-outline-dark mb-4"
+    href="{{ url_for('main.home', page=page_num) }}"
+    >{{ page_num }}</a
+  >
+  {% else %}
+  <a
+    class="btn btn-outline-dark mb-4"
+    href="{{ url_for('main.home', page=page_num) }}"
+    >{{ page_num }}</a
+  >
+  {% endif %} {% else %} ... {% endif %} {% endfor %}
+</div>
 {% endblock %}

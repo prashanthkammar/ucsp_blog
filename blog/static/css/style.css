@@ -161,7 +161,8 @@ body {
 }
 
 h5.card-title {
-  font-family: "Gentium Book Basic", serif;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
 }
 .card-deck {
   padding-left: 1rem;
@@ -212,6 +213,7 @@ h5.card-title {
 
 #events .card-body h3 {
   font-family: "Gentium Book Basic", serif;
+  font-weight: bold;
 }
 /*------Swiper CSS-------*/
 .swiper-container {
@@ -560,7 +562,7 @@ h3.second span:after {
   top: 0;
   margin: 0 0 0 0;
   padding-top: 0.5rem;
-  font-weight: 500;
+  font-weight: bold;
   font-family: "Neuton", serif;
   text-transform: uppercase;
   color: #232323;
@@ -570,7 +572,7 @@ h3.second span:after {
   position: relative;
   left: 0;
   margin-bottom: 2.5rem;
-  font-size: 1rem;
+  font-size: 17px;
   font-family: "Gentium Book Basic", serif;
   font-weight: 200;
   color: #232323;
@@ -736,7 +738,13 @@ hr.light-100 {
   }
 
   #blog {
-    padding-top: 20rem;
+    padding-top: 30rem;
+    margin-top: 5rem;
+    padding-bottom: 25rem;
+  }
+
+  .form-box {
+    margin-top: 10rem;
   }
 
   .blog-post_img {
