@@ -1,5 +1,5 @@
 {% extends "layout.html" %} {% block content %}
-<div class="reset-content-section">
+<div class="register-content-section">
   <form method="POST" action="">
     {{ form.hidden_tag() }}
     <fieldset class="form-group">
@@ -19,7 +19,7 @@
       </div>
     </fieldset>
     <div class="form-group">
-      {{ form.submit(class="btn btn-outline-dark") }}
+      {{ form.submit(class="btn btn-outline-light") }}
     </div>
   </form>
 </div>

@@ -592,6 +592,7 @@ h3.second span:after {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
+  font-family: "Gentium Book Basic", serif;
   background: tomato;
   border-radius: 0.2rem;
   text-decoration: none;
@@ -645,7 +646,7 @@ footer {
   position: absolute;
   width: 100%;
   left: 0px;
-  background-color: #2c2c2c;
+  background-color: #202020;
   color: #ffffff;
   padding-top: 2rem;
 }
@@ -801,6 +802,7 @@ hr.light-100 {
   }
   h3.second {
     font-size: 23px;
+    font-weight: 900;
   }
   .modal-body p {
     font-size: 14px;
