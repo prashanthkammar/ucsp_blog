@@ -666,6 +666,13 @@ hr.light-100 {
   width: 100%;
 }
 
+footer a:hover {
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: none;
+  color: tomato;
+}
+
 /*--responsive_blog--*/
 @media screen and (max-width: 1068px) {
   .blog-post_title {
