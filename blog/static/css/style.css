@@ -517,14 +517,14 @@ h3.second span:after {
   margin: 10rem;
   padding: 5rem;
   right: 0;
-  background-color: #fff;
+  background-color: #f8f8ff;
   display: flex;
   align-items: center;
   border-radius: 0.25rem;
 }
 
 .blog-post_info {
-  background-color: #fff;
+  background-color: #f8f8ff;
   right: 0;
 }
 
@@ -614,8 +614,13 @@ h3.second span:after {
 }
 
 #register .form-box {
-  background: white;
+  background: #f8f8ff;
   font-family: "Gentium Book Basic", serif;
+}
+.form-box input,
+select,
+option {
+  background-color: #f8f8ff;
 }
 
 .register_box {
@@ -888,7 +893,7 @@ footer a:hover {
     min-width: 26rem;
     max-height: 20rem;
     min-height: 20rem;
-    transform: translate(-8rem ,0);
+    transform: translate(-8rem, 0);
     bottom: 0;
   }
   .blog-post {
@@ -901,7 +906,6 @@ footer a:hover {
     height: auto;
   }
 }
-
 
 /* fixing of img hover for board members */
 @media screen and (max-width: 1347px) and (min-width: 1046px) {
