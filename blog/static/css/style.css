@@ -877,6 +877,32 @@ footer a:hover {
     padding: 5rem 0.3rem 0 0.3rem;
   }
 }
+@media screen and (max-width: 1461px) and (min-width: 1345px) {
+  #blog {
+    position: relative;
+    height: 30vh;
+    left: -10%;
+  }
+  .blog-post_img {
+    max-width: 26rem;
+    min-width: 26rem;
+    max-height: 20rem;
+    min-height: 20rem;
+    transform: translate(-8rem ,0);
+    bottom: 0;
+  }
+  .blog-post {
+    position: absolute;
+    top: -20px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 70%;
+    min-width: 70%;
+    height: auto;
+  }
+}
+
+
 /* fixing of img hover for board members */
 @media screen and (max-width: 1347px) and (min-width: 1046px) {
   .img-box {
