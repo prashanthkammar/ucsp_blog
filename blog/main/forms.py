@@ -15,7 +15,7 @@ class MemberForm(Form):
     )
     lastname = StringField(
         "Last Name",
-        validators=[DataRequired(), Length(min=2, max=30)],
+        validators=[DataRequired(), Length(min=1, max=30)],
         filters=[strip_filter]
     )
     email = StringField(

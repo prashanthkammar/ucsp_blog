@@ -60,6 +60,22 @@
       </nav>
       <!--End nav-->
 
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-10 ml-auto mr-auto">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{category}}">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              {{message}}
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}    
+          </div>
+      </main>
+
     <!-- Registration page -->
     <div id="register" class="offset">
       <div class="form-box">
@@ -221,24 +237,6 @@
   <!--Scripts-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
-  <!-- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbza4Lx4a1AO9Ea48C57OoqTGYq2Asqf0ipYG0R5-N8cLj2Fwpc/exec'
-  const form = document.forms['Reg']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    var response_message = document.getElementById("response_message");
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-      .then((html) => {
-      alert('Your registration was successfull')
-      
-    })
-    .then(document.getElementById("Reg").reset())
-  })
-</script> -->
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> `
   </body>
 </html>

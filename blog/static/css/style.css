@@ -33,6 +33,9 @@ body {
   -ms-overflow-style: none;
 }
 
+.alert {
+  margin-top: 5rem;
+}
 .offset::before {
   display: block;
   content: "";
@@ -921,6 +924,9 @@ footer a:hover {
     max-width: 70%;
     min-width: 70%;
     height: auto;
+  }
+  .alert {
+    padding-left: 10rem;
   }
 }
 
