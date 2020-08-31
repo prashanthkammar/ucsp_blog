@@ -1045,6 +1045,7 @@ footer a:hover {
   #blog {
     height: 130vh;
     padding-top: 35rem;
+    margin-bottom: 10rem;
   }
   .modal-body p {
     font-size: 14px;
