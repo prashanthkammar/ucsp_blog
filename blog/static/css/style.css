@@ -507,7 +507,8 @@ h3.second span:after {
   justify-content: center;
   padding: 0 1.5rem;
   margin: 4rem 5rem 0 -1rem;
-  padding-top: 20rem;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
 }
 
 .blog-post {
@@ -609,7 +610,7 @@ h3.second span:after {
 /*---Registration page----*/
 
 #register {
-  margin: 10rem 15rem 1rem 15rem;
+  margin: 1rem 15rem 1rem 15rem;
   padding: 5rem;
 }
 
@@ -625,13 +626,19 @@ option {
 
 .register_box {
   margin: 2rem;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: -2rem 2rem 2rem 2rem;
   color: black;
   border-radius: 5px;
 }
 
 .register_button {
   margin-left: 37%;
+}
+#register .btn {
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: tomato;
+  border-color: tomato;
 }
 
 .form-control:valid {
@@ -787,14 +794,23 @@ footer a:hover {
   }
   .caption h1 {
     font-size: 28px;
+    top: 4%;
   }
   .caption h3 {
     font-size: 16px;
     line-height: 2px;
+    top: 1%;
+    margin-bottom: 20rem;
+    padding-bottom: 10rem;
   }
   .btn-lg {
     margin: 1rem;
     font-size: 0.79rem;
+  }
+
+  .caption a {
+    margin-bottom: 10rem;
+    bottom: -20rem;
   }
   h3.second {
     font-size: 20px;
@@ -811,7 +827,8 @@ footer a:hover {
   }
   #blog {
     height: 120vh;
-    margin-bottom: 0rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
     padding-bottom: 28rem;
   }
   h3.second {
@@ -822,12 +839,12 @@ footer a:hover {
     font-size: 14px;
   }
   #register {
-    margin: 40px 10px 20px 10px;
-    padding: 60px 5px 2px;
+    margin: 20px 10px 20px 10px;
+    padding: 40px 5px 2px;
   }
 
   .form-box {
-    margin-top: 5rem;
+    margin-top: 0.5rem;
   }
   .register_box {
     margin: 10px;
@@ -1021,6 +1038,7 @@ footer a:hover {
   }
   #blog {
     height: 130vh;
+    padding-top: 35rem;
   }
   .modal-body p {
     font-size: 14px;
