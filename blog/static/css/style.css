@@ -189,6 +189,40 @@ h5.card-title {
   font-size: 18px;
   font-weight: 500;
 }
+/*----WING-----*/
+#collab {
+  padding-bottom: 10rem;
+}
+.wing {
+  position: relative;
+  max-width: 65%;
+  min-width: 65%;
+  margin: 0 auto;
+  background-color: #f8f8ff;
+  box-shadow: 0.5rem 0.5rem 0.9rem 1px rgb(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+.row1 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.wing-box {
+  color: #232323;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+.wing-logo {
+  width: auto;
+  height: 60px;
+  position: absolute;
+  left: 120%;
+  margin-top: 4rem;
+}
 
 /*---events---*/
 
@@ -863,6 +897,34 @@ footer a:hover {
     margin-top: 5rem;
     padding-top: 0.1rem;
   }
+  .wing {
+    position: relative;
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .row1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+  .wing-box {
+    color: #232323;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .wing-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: 17%;
+  }
 }
 
 /*-- responsive caption (landing page)--*/
@@ -928,6 +990,34 @@ footer a:hover {
   .alert {
     padding-left: 10rem;
   }
+  .wing {
+    position: relative;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 0 auto;
+  }
+  .row1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .wing-box {
+    color: #232323;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .wing-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: 120%;
+  }
 }
 
 /* fixing of img hover for board members */
@@ -965,6 +1055,34 @@ footer a:hover {
   }
   .register_button {
     margin-left: 37%;
+  }
+  .wing {
+    position: relative;
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0 auto;
+  }
+  .row1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .wing-box {
+    color: #232323;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .wing-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: 110%;
   }
 }
 @media screen and (max-width: 1046px) and (min-width: 768px) {
@@ -1006,6 +1124,34 @@ footer a:hover {
   }
   .register_button {
     margin-left: 37%;
+  }
+  .wing {
+    position: relative;
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .row1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .wing-box {
+    color: #232323;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .wing-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: 90%;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 375px) {
@@ -1065,6 +1211,34 @@ footer a:hover {
   }
   .register_button {
     margin-left: 23%;
+  }
+  .wing {
+    position: relative;
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .row1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+  .wing-box {
+    color: #232323;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .wing-logo {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    left: 21%;
   }
 }
 @media screen and (max-width: 940px) and (min-width: 780px) {
