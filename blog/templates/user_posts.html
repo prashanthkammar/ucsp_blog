@@ -1,9 +1,4 @@
-{% extends "layout.html" %} {% block content %}
-<!-- <h1 class="mb-3" style="color: #fff; margin-top: 4rem">
-  Posts by {{ user.username }} ({{ posts.total }})
-</h1> -->
-<div class="empty_div" ></div>
-{% for post in posts.items %}
+{% extends "layout.html" %} {% block content %} {% for post in posts.items %}
 <article class="media login-content-section">
   <div class="media-body">
     <div class="article-metadata">
