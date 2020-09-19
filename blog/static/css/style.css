@@ -59,6 +59,10 @@ body {
   filter: (opacity=50);
 }
 
+/* a.nav-link {
+  text-transform: uppercase;
+} */
+
 .navbar-brand img {
   height: 2.8rem;
 }
@@ -152,14 +156,14 @@ body {
 
 /*---lecturers---*/
 
-#founder.card {
+#mentor.card {
   box-shadow: 10px 25px 60px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   text-align: justify;
 }
 
-#founder h3.heading {
+#mentor h3.heading {
   padding-top: 10px;
 }
 
@@ -184,7 +188,7 @@ h5.card-title {
   background-color: #edeeef;
 }
 
-#founder .card p {
+#mentor .card p {
   font-family: "Gentium Book Basic", serif;
   font-size: 18px;
   font-weight: 500;
