@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ucsp.in [NC]
+RewriteRule ^(.*)$ http://www.ucsp.in/$1 [L,R=301]
