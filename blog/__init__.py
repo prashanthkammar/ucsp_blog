@@ -6,6 +6,7 @@ from flask_migrate import MigrateCommand
 from blog.config import Config
 from blog.commands import create_tables
 from blog.extensions import db, login_manager, mail, admin, migrate, manager
+from flask_cdn import CDN
 
 login_manager.login_view = 'users.login'
 login_manager.login_message_category = 'info'
@@ -21,6 +22,7 @@ def create_app(config_class=Config):
     admin.init_app(app)
     migrate.init_app(app, db)
     manager(app)
+    CDN(app)
 
     from blog.users.routes import users
     from blog.posts.routes import posts
