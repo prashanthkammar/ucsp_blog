@@ -47,7 +47,8 @@ class MemberForm(Form):
             ("EEE", "Electrical & Electronics Engineering"),
             ("ISE", "Information Science Engineering"),
             ("MECH", "Mechanical Engineering"),
-            ("Civil", "Civil Engineering")
+            ("Civil", "Civil Engineering"),
+            ("IPE", "Industrial and Production Engineering")
         ]
     )
     semester = SelectField(
