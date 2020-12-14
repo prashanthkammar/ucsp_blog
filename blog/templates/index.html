@@ -351,6 +351,18 @@
         <div class="swiper-slide">
           <div class="cardSet3 card">
             <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/cryptography.jpeg')}}">
+              <h3 class="pt-2 pb-2 text-center card-title">Cryptography</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> GoTo Webinar</p>
+              <p><b>Date:</b> 1/11/2020</p>
+              <button class="btn btn-link" data-target="#crypt" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
               <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/imageprocessing.jpeg')}}" alt="event1">
               <h3 class="pt-2 pb-2 text-center card-title">Image Processing</h3>
               <p><b>Organized by:</b> UCSP</p>
@@ -576,6 +588,32 @@
         </div>
       </div>
     </div>
+
+        <!--Cryptography event-->
+        <div id="crypt" class="modal fade">
+          <div class="modal-dialog modal-md">
+            <div style="padding: 34px 10px;" class="modal-content">
+              <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+                class="close" data-dismiss="modal">&times;</button>
+              <h4 class="text-center">Cryptography in Projects</h4>
+              <div class="modal-body">
+                <p style="font-size: 1.1rem;" class="text-center
+                lead">'Cryptography in Projects'  was a two session event
+                covering both theory as well as its applications in the field.
+                The first session included introduction to cryptography,
+                vulnerabilities and attacks on wired and wireless networks,
+                TCP/IP model, security goals, services and mechanisms, Euclidian
+                algorithm, process of GCP, ciphers and several related topics.
+                In the second session, two projects were displayed. One of them
+                was using a project on RSA algorithm using python programming
+                language. Other was encryption and decryption using Hill Cipher
+                algorithm. Overall, this event gave a head start to students who
+                are interested in the field by covering the prerequisites.<br>
+                <span><b>Resource person</b>: Anand Srivatsa, Head of SDSC and Assistant Professor, Department of ECE, NIE Mysuru.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <!--Image processing event-->
     <div id="ip" class="modal fade">
