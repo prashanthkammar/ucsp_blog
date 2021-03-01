@@ -22,7 +22,7 @@ class RegistrationForm(Form):
         user = User.query.filter_by(email=email.data).first()
         if user:
             raise ValidationError(
-                'Email ID has been taken!')
+                'Email ID has been taken!') 
 
 
 class LoginForm(Form):
